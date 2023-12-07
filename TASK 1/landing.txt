@@ -1,0 +1,595 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=2">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa 
+{
+  padding: 10px;
+  font-size: 25px;
+  width: 20px;
+  text-align:center;
+  text-decoration: none;
+}
+.fa:hover 
+{
+  opacity: 0.7;
+}
+.fa-twitter
+{
+  color:white;
+}
+.fa-instagram
+{
+  color:white;
+}
+.fa-facebook
+{
+  color:white;
+}
+.fa-youtube
+{
+  color:white;
+}
+.fa-vine
+{
+  color:white;
+}
+.fa-linkedin
+{
+  color:white;
+}
+.color1
+{
+  height:50px;
+  background-image:linear-gradient(-90deg,rgb(192,0,0),rgb(176,224,230));
+}
+img.mail 
+{
+  vertical-align:baseline;
+}
+.button
+{
+  border:none;
+  color:#253957;
+  padding:10px 15px;
+  text-align:center;
+  text-decoration:none;
+  display:inline:block;
+  margin:4px 2px;
+  cursor:pointer;
+  border-radius:20px;
+  font-style:Microsoft-Himalaya;
+  font-size:14px;
+  text-transform:uppercase;
+  flex:1 1 auto;
+  transition:0.5s;
+  box-shadow:0 0 10px #eee;
+}
+.button:hover
+{
+  color:#e38989;
+  background-position:right center;
+}
+.button-1
+{
+   background-image:linear-gradient(to right,#fbc2eb 0%,#a6c1ee 51%,#fbc2eb 100%);
+ }
+ ul
+ {
+   list-style-type:none;
+   padding:0;
+   overflow:hidden;
+   margin:0;
+   background-color:#f0fff0;
+ }
+ li 
+ {
+    float:left;
+}
+li a
+{
+   font-size:23px;
+   font-family:Sitka Heading;
+   display:block;
+   padding:10px;
+   text-align:center;
+   text-decoration:none;
+ }
+ li a:hover
+ {
+     color:green;
+ }
+ #li2
+ {
+	font-size:23px;
+   font-family:Sitka Heading;
+   background:linear-gradient(to right,rgba(255,215,255,0) 20%,rgba(225,255,255,0.5) 20%,rgba(255,255,255,0) 61%),linear-gradient(rgb(97,183,217) 52%,rgb(224,246,255) 60%,rgb(78,99,132) 61%);
+   background-clip:text;
+   -webkit-background-clip:text;
+   -webkit-text-fill-color:transparent;
+   animation:wave 2000ms ease alternate infinite;
+   transition:all 0.4 ease;
+ }
+ @keyframes wave
+ {
+    0%
+	{
+	    background-position:0 0;
+	}
+	100%
+	{
+      background-position:20vw  8px;
+	}
+}
+ .text
+ {
+    font-style:Microsoft Yi Baiti;
+	font-size:1rem;
+	margin-top:0px;
+	margin-bottom:0px;
+	background:linear-gradient(to right,#ef5350,#f48fb1,#7e57c2,#2196f3,#26c6da,#43a047,#eeff41,#f9a825,#ff5722);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	float:left;
+	padding-left:5px;
+}
+.container
+{
+   display:flex;  
+ }
+ img
+ {
+    float:left;
+}
+.dropdown
+{
+   float:left;
+   overflow:hidden;
+   font-size:23px;
+}
+.dropdown .dropbtn
+{
+    font-size:14px;
+	border:none;
+	outline:none;
+	color:#734128;
+	padding:14px 16px;
+	background-color:inherit;
+	margin:0;
+}
+li a:hover, .dropdown:hover .dropbtn
+{
+    background-image:linear-gradient(-180deg,maroon,aquamarine);
+	color:#f6f0ff;
+}
+.dropdown-content
+{
+   display:none;
+   position:absolute;
+   background-color:#f9f9f9;
+   min-width:160px;
+   box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index:1;
+}
+.dropdown-content a
+{
+    float:none;
+	display:block;
+	text-align:center;
+	text-decoration:none;
+	padding:12px 16px;
+}
+.dropdown-content a:hover
+{
+    background-color:#eee;
+}
+.dropdown:hover .dropdown-content
+{
+    display:block;
+}
+.search input[type=text]
+{
+        width:150px;
+        height:40px;
+        border-radius:24px;
+        border: none;
+ }         
+.search
+{
+        float:right;
+        margin:4px;    
+}     
+.search button
+{
+        background-color:black;
+        color: #acddaf;
+        float: right;
+        font-size: 10px;
+        border: none;
+        cursor: pointer;
+} 
+.contain 
+{
+   position:relative;
+   text-align:center;
+   color:white;
+ }
+ .image-container
+ {
+     position:relative;
+	 display:inline-block;
+}
+.overlay-text
+{
+    position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-90%,50%);
+	padding:10px 20px;
+	text-align:center;
+}
+.top-right
+{
+    position:absolute;
+	top:10px;
+	right:60px;
+}
+.con 
+{
+    position:relative;
+	text-align:center;
+}
+.example
+{
+    position:relative;
+	padding:0;
+	width:100%;
+	display:block;
+	cursor:pointer;
+	overflow:hidden;
+}
+.content1
+{
+  opacity: 0;
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #1c87c9;
+  background-color: rgba(200, 200, 200, 0.5);
+  width: 1350px;
+  height: 800px;
+  -webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  -ms-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  text-align: center;
+}
+.example .content1:hover
+ {
+  opacity: 1;
+}
+.example .content1.text1 
+{
+  opacity: 1;
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+}
+.example .content1:hover .text1 
+{
+  opacity: 1;
+  transform: translateY(250px);
+  -webkit-transform: translateY(250px);
+}
+.blink
+{
+    font-size:40px;
+	font-weight:bold;
+	font-family:Modern;
+	animation:blink 2s linear infinite;
+}
+@keyframes blink
+{
+   50%
+   {
+      opacity:0;
+	}
+}
+footer
+{
+    padding:5px;
+	background-color:Darksalmon;
+	color:white;
+}
+.column
+{
+    float:left;
+	width:40%;
+	padding:10px;
+}
+.row:after
+{
+   content:"";
+   display:table;
+   clear:both;
+}
+.arrow 
+{
+  cursor: pointer;
+  display: inline-block;  
+  height: 40px;
+  position: relative;
+  line-height: 2.5em;
+  padding-left: 1em;
+  padding-right: 2em;
+  background: white;
+  color: black;
+   &:after 
+   {
+    border-left: 20px solid white;
+  }
+}
+.arrow:after 
+{
+  content: "";
+  position: absolute;
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  height: 0px;
+  width: 0px;
+  margin-right: -20px;
+  right: 0; 
+}
+.arrow:hover, .arrow:active 
+{
+  background: yellow;
+  color: black;
+  &:after 
+  {
+    border-left: 20px solid yellow;
+  }
+}
+#content 
+{
+  width: 20em;
+}
+#a:visited, #a:link 
+{
+  color: #F93;
+}
+.modal
+{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 30px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content
+ {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.close 
+{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus
+ {
+  color: maroon;
+  text-decoration: none;
+  cursor: pointer;
+}
+.form-inline 
+{  
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.form-inline label 
+{
+  margin: 5px 10px 5px 0;
+}
+.form-inline input 
+{
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.form-inline button 
+{
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+.form-inline button:hover 
+{
+  background-color: royalblue;
+}
+@media (max-width: 800px)
+{
+  .form-inline input 
+  {
+    margin: 10px 0;
+  }
+  .form-inline
+  {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+</style>  
+</head>
+<body>
+<div class="color1">
+  <a href="#" class="fa fa-twitter" style="margin-left:200px;border-left:2px groove white"></a>
+  <a href="#" class="fa fa-instagram" style="border-left:2px groove white"></a>
+  <a href="#" class="fa fa-facebook" style="border-left:2px groove white"></a>
+  <a href="#" class="fa fa-youtube" style="border-left:2px groove white"></a>
+  <a href="#" class="fa fa-vine" style="border-left:2px groove white"></a>
+  <a href="#" class="fa fa-linkedin" style="border-left:2px groove white"></a>
+  <i class="fa" style="color:white;font-size:24px;margin-left:100px">&#xf095;</i>
+  <a style="color:white;font-size:25px;margin-right:200px;padding:10px">+456-7472-1124
+  <i class="fa" style="color:white;font-size:24px;border-left:3px solid white;vertical-align:baseline">&#xf0e0;</i></a>
+  <a style="color:white;font-size:25px;margin-left:-220px;padding:10px">landcod123@gmail.com</a>
+  <button class="button button-1"  style="margin-left:-2px"><b>Request & Consult<b></button> 
+</div>
+<div class="container" >
+  <div class="image">
+   <img src="c:/Codsoft/tlogo.jpg" width="100" height="90"  style="margin-left:40px">
+  </div>
+  <div class="text">
+     <h1 style="margin-left:-5px;margin:top:20px">TRABAGLAND</h1>
+  </div>
+  <ul>
+     <li>
+         <a style="margin-top:15px"><i>HOME</i></a>
+	 </li>
+	 <li>
+	 <div class="dropdown">
+        <a class="dropbtn"  id="li2"><i>BLOG</i><i class="fa fa-caret-down"></i></a>
+         <div class="dropdown-content">
+            <a >Blog 1</a>
+           <a>Blog 2</a>
+           <a>Blog 3</a>
+        </div>
+    </div></li>
+	 <li>
+	 <div class="dropdown">
+         <a class="dropbtn"  id="li2"><i>PAGE</i><i class="fa fa-caret-down"></i></a>
+         <div class="dropdown-content">
+            <a >Page 1</a>
+           <a>Page 2</a>
+           <a>Page 3</a>
+        </div>
+    </div></li>
+	<li>
+         <a style="margin-top:14px"><i>CONTACT US</i></a>
+	 </li>
+	 <li>
+         <a style="margin-top:14px"><i>PARTNERS</i></a>
+	 </li>
+	<li>
+	<div class="search" >
+         <form action="#">
+              <input type="text" placeholder=" Search" name="search" style="margin-top:12px;background-color:#f3efdb;color:#1c305c">
+                <button><i class="fa fa-search" style="margin-top:9px"></i></button>
+         </form>
+    </div>
+   </li>
+   <li>
+      <button  style="background-image:linear-gradient(#3b117d,#e6d7c0);width:120px;text-align:center;color:aquamarine;border-radius:90px;margin-top:20px;font-size:24px"  id="myBtn" ><b>BOOK</b></button> 
+    </li>	  
+</ul>	
+</div>
+<div class="example">
+    <div class="con">     
+       <img src="c:/Codsoft/travel.jpg" width="100%" height="70%" align="center">
+	   <div class="overlay-text" style="color:#e9e46e;font-size:23px">
+	   <b>YOUR LUGGAGE IS SAFE IN HANDS</b></div>
+      <div class="top-right" ><h1 class="blink" style="color:#ff00ff">Interjection<br>A Country Mile</h1></div> 
+	</div>
+   <div class="content1">
+    <div class="text1" style="color:#630063;font-style:Vijaya"><marquee behaviour="scroll" direction="left" scrollamount="8"><b>PLEASE CLICK BOOK BUTTON FOR BOOK YOUR REGISTRATION</b></marquee></div>
+   </div>	
+</div>
+<footer>
+  <div class="row">
+    <div class="column">
+     <h1 style="font-size:23px;color:blue"><b>About Trabagland</b></h1>
+	 <p style="font-size:18px">Trabagland is a travel bags or luggages landing place<br>Let us care about your stuff to make<br>
+	 Your travel easy-breezy.</p>
+	 <p style="font-size:18px">Well pic your bags from any place you need<br>Deliever the bag to the choosen location</p><br><br>
+	 <h1 style="font-size:23px;color:blue"><b>Contact Us</b></h1>
+     <p style="font-size:18px">Call Us : 234-123-8576<br>Timing : 8:00 am to 8:00 pm IST Everyday</p><br><br>
+	 <h1 style="font-size:23px;color:blue"><b>Signup For Newsletter</b></h1><br>
+	   <div id="content">
+	      <form>
+	      <a class="arrow"><input type="text" placeholder="Enter Your Email Address" class="arrow"></a>
+		 </form>
+		</div>
+    </div>
+    <div class="column">
+      <h1 style="font-size:23px;color:blue"><b>Our Policies</b></h1>
+      <p style="font-size:18px">Payment<br>Shipping<br>Returns<br>Price Match<br>Terms & Conditions</p><br>
+     <h1 style="font-size:23px;color:blue"><b>Main Branch</b></h1><br><p style="font-size:17px">21 East Highway, <br>Beijing .</p><br>
+     <p style="font-size:17px">Write Us</p>
+     <p style="font-size:17px">Jobs &nbsp;&nbsp;&reg;&nbsp;&nbsp;TBL</p><br><br>
+	 <h1 style="font-size:23px;color:blue"><b>Follow Us</b></h1>
+      <p class="fa fa-youtube"></p>&nbsp;&nbsp;&nbsp
+      <p class="fa fa-linkedin"></p>&nbsp;&nbsp;&nbsp
+	  <p class="fa fa-twitter"></p>&nbsp;&nbsp;&nbsp
+	  <p class="fa fa-instagram"></p>&nbsp;&nbsp;&nbsp
+	  <p class="fa fa-facebook"></p>
+    </div>
+  </div>	
+  <h1 style="font-size:30px;text-align:center">Copyright&nbsp;&copy;&nbsp;Trabagland, LLC All Rights Reserved</h1>
+ </footer>
+ <div id="myModal" class="modal">
+    <div  class="modal-content"  style="background-color:#90ee90">
+	    <span class="close">&times;</span>
+		<form class="form-inline" action="c:/Codsoft/bookpg.html">
+		 <h1 style="font-size:23px;color:maroon;text-align:center"><b>TRABAGLAND REGISTARION</b></h1>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter Email Address" name="email"><br>
+        <label for="pwd">Password</label>
+       <input type="password" id="pwd" placeholder="Enter password" name="pswd"><br>
+	   <label>Arrival Date</label>
+	   <input type="date" placeholder="DD-MON-YYYY" style="width:18%;height:40px"><br>
+	   <label>Arrival Time</label>
+	   <input type="time" placeholder="HH:MM:SS" style="width:18%;height:40px"><br>
+	    <label>Your Luggage Site</label>
+	    <select style="width:193px;height:40px">
+	    <option>India</option>
+		<option>USA</option>
+		<option>UK</option>
+		<option>China</option>
+		</select><br>
+        <label>
+        <input type="checkbox" name="remember" style="width:10.6%">Remember me
+        </label><br>
+       <button type="submit"><i>SUBMIT</i></button>
+      </form>
+	</div>
+  </div>
+  <script>
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() 
+{
+  modal.style.display = "block";
+}
+span.onclick = function() 
+{
+  modal.style.display = "none";
+}
+window.onclick = function(event)
+ {
+  if (event.target == modal) 
+  {
+    modal.style.display = "none";
+  }
+}
+</script> 
+</body>
+</html>
